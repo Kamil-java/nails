@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import ServiceDetail from "./components/ServiceDetail";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
+  const [selectedService, setSelectedService] = useState(null);
+
+  // Funkcja obsługi kliknięcia, która ustawia wybraną usługę
+  const handleServiceClick = (service) => {
+    setSelectedService(service);
+  };
+
+  // Funkcja powrotu do głównego widoku
+  const handleBackToMain = () => {
+    setSelectedService(null);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {selectedService ? (
+        // Widok szczegółów usługi
+        <ServiceDetail service={selectedService} onBack={handleBackToMain} />
+      ) : (
+        // Widok główny z usługami i formularzem kontaktowym
+        <>
+          <Services onServiceClick={handleServiceClick} />
+          <Contact />
+        </>
+      )}
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,5 @@
+.carousel-item img {
+  width: 100%; /* Full width */
+  height: auto; /* Auto height to maintain aspect ratio */
+  object-fit: cover; /* Optional: ensures the image covers the area */
+}

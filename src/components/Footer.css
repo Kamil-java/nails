@@ -1,0 +1,21 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #007bff; /* Kolor linków */
+  font-size: 24px; /* Rozmiar ikon */
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer .text-uppercase {
+  font-weight: bold;
+}
+
+.footer i {
+  margin: 0 10px; /* Odstęp między ikonami */
+}

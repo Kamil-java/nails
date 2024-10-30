@@ -1,0 +1,24 @@
+.gallery-container {
+  padding: 20px;
+}
+
+.gallery-item {
+  margin-bottom: 16px; /* Space between items */
+}
+
+.gallery-image {
+  width: 100%; /* Make images responsive */
+  display: block; /* Remove extra space below images */
+  border-radius: 8px; /* Optional: Round the corners */
+}
+
+.my-masonry-grid {
+  display: flex; /* Enables flexbox */
+  margin-left: -16px; /* Adjust for the margin */
+  width: auto; /* Width of the grid */
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px; /* Space between columns */
+  background-clip: padding-box; /* Helps with background */
+}

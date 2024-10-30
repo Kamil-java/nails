@@ -1,11 +1,21 @@
-.footer {
+/* .footer {
   background-color: #f8f9fa;
   padding: 20px 0;
+} */
+
+.footer {
+  padding: 0.25rem 0; /* Reduce vertical padding further */
+}
+
+.footer .container p,
+.footer h5 {
+  font-size: medium;
+  margin-bottom: 0.1rem; /* Further decrease space between elements */
 }
 
 .footer a {
   color: #007bff; /* Kolor linków */
-  font-size: 24px; /* Rozmiar ikon */
+  font-size: 25px; /* Rozmiar ikon */
 }
 
 .footer a:hover {

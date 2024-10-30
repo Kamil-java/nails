@@ -17,19 +17,31 @@ function Header() {
           </Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="/polaroidgallery">
+            Pollaroid Gallery
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link className="nav-link" to="/price">
             Price
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/price">
+          <Link className="nav-link" to="/calendar">
+            Reservation Calendar
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/about_me">
             About Me
           </Link>
         </li>
       </ul>
-      <header className="bg-light-pink text-white text-center p-2">
-        <h1>Tytuł</h1>
-        <p>Profesjonalne usługi manicure i pedicure. Martyna Birlet</p>
+      <header className="bg-light-pink text-white text-center p-3">
+        <h1 style={{ color: "black" }}>Tytuł</h1>
+        <p style={{ color: "black" }}>
+          Profesjonalne usługi manicure i pedicure. Martyna Birlet
+        </p>
       </header>
     </div>
   );

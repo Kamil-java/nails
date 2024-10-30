@@ -15,7 +15,10 @@ function ServiceDetail() {
         <div className="col-md-6 mb-4">
           <h2>{service.name}</h2>
           <p>
-            <strong>Cena:</strong> {service.price}
+            <strong>Cena:</strong> {service.price} zł
+          </p>
+          <p>
+            <strong>Czas realizacji:</strong> 1h-2h
           </p>
           <p>{service.description}</p>
         </div>

@@ -1,0 +1,35 @@
+.polaroid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.polaroid {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 10px;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.polaroid:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.polaroid-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,92 +1,33 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import Masonry from "react-masonry-css";
+import "./Gallery.css"; // Create/update this CSS file
 
 function Gallery() {
+  const images = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4O3BsnCHclQ8tXljMDSfWeu1bO3kkvBfSw&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwZsaLzXWH3ODMeIwNCM2yMmEA996QOsOyQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9z5M9F8fIYi7c2lOTSEEfrWpZbMWTE7HxeQ&s",
+    "https://via.placeholder.com/1920x1080?text=Stylizacja+4",
+    "https://via.placeholder.com/1920x1080?text=Stylizacja+5",
+  ];
+
   return (
-    <section className="container my-5">
-      <h2 className="text-center mb-4">Galeria</h2>
-      <Carousel indicators={false} interval={3000} className="gallery-carousel">
-        {/* Pierwszy slajd z trzema obrazami */}
-        <Carousel.Item>
-          <div className="row">
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 1"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 2"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 3"
-                className="img-fluid"
-              />
-            </div>
+    <section className="gallery-container">
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {images.map((image, index) => (
+          <div key={index} className="gallery-item">
+            <img
+              src={image}
+              alt={`Stylizacja ${index + 1}`}
+              className="gallery-image"
+            />
           </div>
-        </Carousel.Item>
-
-        {/* Drugi slajd z kolejnymi trzema obrazami */}
-        <Carousel.Item>
-          <div className="row">
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 4"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 5"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 6"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </Carousel.Item>
-
-        {/* Trzeci slajd z kolejnymi dwoma obrazami */}
-        <Carousel.Item>
-          <div className="row">
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 7"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 8"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Stylizacja 9"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+        ))}
+      </Masonry>
     </section>
   );
 }

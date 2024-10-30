@@ -2,6 +2,8 @@
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-radius: 10px;
+  max-width: 100rem;
+  margin: auto;
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -11,4 +13,53 @@
   border-radius: 50%;
   background-color: #e9ecef;
   box-shadow: 0 0 15px rgba(196, 255, 34, 0.918);
+}
+
+.container-fluid {
+  min-height: 80vh; /* Adjust as needed */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container-leaves {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-leaves .falling-leaf {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  opacity: 0.6;
+  animation: fallAnimation 10s linear infinite;
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-10%) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+.container-leaves .falling-leaf:nth-child(1) {
+  left: 20%;
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+
+.container-leaves .falling-leaf:nth-child(2) {
+  left: 50%;
+  animation-delay: 3s;
+  animation-duration: 12s;
+}
+
+.container-leaves .falling-leaf:nth-child(3) {
+  left: 80%;
+  animation-delay: 5s;
+  animation-duration: 18s;
 }

@@ -2,6 +2,42 @@
   background-color: hsl(355, 74%, 82%);
 }
 
+@keyframes polishEffect {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.bg-light-pink {
+  background: linear-gradient(
+    120deg,
+    #ffd1dc,
+    #ffc4b3,
+    #ffe4b2,
+    #c4f0c5,
+    #d4cff9
+  );
+  background-size: 400% 100%;
+  animation: polishEffect 25s infinite linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-light-pink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png"); /* Brushed texture */
+  opacity: 0.3; /* Adjust opacity for texture visibility */
+  pointer-events: none;
+}
+
 .nav-link {
   font-size: 1.2rem; /* Adjust as needed */
 }

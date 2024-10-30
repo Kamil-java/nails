@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer bg-light text-center text-lg-start mt-auto">
+    <footer className="footer bg-light text-center text-lg-start mt-auto py-1">
       <div className="container p-2">
         <section className="mb-2">
           <h5 className="text-uppercase">Skontaktuj się z nami</h5>
@@ -11,6 +11,8 @@ function Footer() {
             Jesteśmy dostępni w każdy poniedziałek - sobotę od 9:00 do 20:00.
             Skontaktuj się z nami, aby umówić się na wizytę!
           </p>
+          <p>Telefon: +48 999 999 999</p>
+          <p>Email: nails@gmial.com</p>
         </section>
         <section className="mb-2">
           <h5 className="text-uppercase">Media społecznościowe</h5>
@@ -33,7 +35,7 @@ function Footer() {
         </section>
       </div>
       <div className="text-center p-2 bg-light">
-        © {new Date().getFullYear()} Twoja Firma - Wszelkie prawa zastrzeżone.
+        © {new Date().getFullYear()} Firma - Wszelkie prawa zastrzeżone.
       </div>
     </footer>
   );

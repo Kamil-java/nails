@@ -1,4 +1,5 @@
 import React from "react";
+import "./Services.css";
 
 function Services({ onServiceClick }) {
   const services = [
@@ -24,9 +25,9 @@ function Services({ onServiceClick }) {
       <h2 className="text-center mb-4">Nasze Usługi</h2>
       <div className="row">
         {services.map((service) => (
-          <div key={service.id} className="col-md-4">
+          <div key={service.id} className="col-md-6 mb-4">
             <div
-              className="p-3 border text-center service-card"
+              className="p-3 text-center service-card"
               onClick={() => onServiceClick(service)}
             >
               <h3>{service.name}</h3>

@@ -1,0 +1,14 @@
+.service-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  border-radius: 50%;
+  background-color: #e9ecef;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+}

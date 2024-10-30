@@ -1,7 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Services.css";
 
-function Services({ onServiceClick }) {
+function Services() {
   const services = [
     {
       id: 1,
@@ -18,7 +19,29 @@ function Services({ onServiceClick }) {
       name: "Stylizacja Paznokci",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
     },
+    {
+      id: 4,
+      name: "Stylizacja Paznokci",
+      description: "Oryginalne wzory i artystyczne projekty paznokci.",
+    },
+    {
+      id: 5,
+      name: "Stylizacja Paznokci",
+      description: "Oryginalne wzory i artystyczne projekty paznokci.",
+    },
+    {
+      id: 6,
+      name: "Stylizacja Paznokci",
+      description: "Oryginalne wzory i artystyczne projekty paznokci.",
+    },
+    {
+      id: 7,
+      name: "Stylizacja Paznokci",
+      description: "Oryginalne wzory i artystyczne projekty paznokci.",
+    },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <section className="container my-5">
@@ -28,7 +51,7 @@ function Services({ onServiceClick }) {
           <div key={service.id} className="col-md-6 mb-4">
             <div
               className="p-3 text-center service-card"
-              onClick={() => onServiceClick(service)}
+              onClick={() => navigate(`/service/${service.id}`)}
             >
               <h3>{service.name}</h3>
               <p>{service.description}</p>

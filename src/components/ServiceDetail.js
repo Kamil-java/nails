@@ -1,40 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
+import { useParams } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function ServiceDetail({ service, onBack }) {
-  const images = [
-    "https://via.placeholder.com/300",
-    "https://via.placeholder.com/340",
-    "https://via.placeholder.com/300",
-  ];
+function ServiceDetail() {
+  const { id } = useParams();
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextImage = () => setCurrentIndex((currentIndex + 1) % images.length);
-  const prevImage = () =>
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  // Przykładowe dane
+  const service = {
+    id,
+    name: "Stylizacja Paznokci",
+    description: "Pełny opis usługi, dostosowany do wybranej stylizacji.",
+    price: "150 zł",
+    images: [
+      "https://via.placeholder.com/800x400?text=Stylizacja+1",
+      "https://via.placeholder.com/800x400?text=Stylizacja+2",
+      "https://via.placeholder.com/800x400?text=Stylizacja+3",
+    ],
+  };
 
   return (
-    <section className="container my-5">
-      <button onClick={onBack} className="btn btn-secondary mb-4">
-        Wróć do usług
-      </button>
-      <h2 className="text-center mb-4">{service.name}</h2>
-      <p className="text-center">{service.description}</p>
-
-      <div className="text-center">
-        <button onClick={prevImage} className="btn btn-primary me-2">
-          Poprzednie
-        </button>
-        <img
-          src={images[currentIndex]}
-          alt={`Zdjęcie ${currentIndex + 1}`}
-          className="img-fluid"
-        />
-        <button onClick={nextImage} className="btn btn-primary ms-2">
-          Następne
-        </button>
-      </div>
-    </section>
+    <div className="container my-5">
+      <h2>{service.name}</h2>
+      <p>
+        <strong>Cena:</strong> {service.price}
+      </p>
+      <p>{service.description}</p>
+      <Carousel>
+        {service.images.map((image, index) => (
+          <Carousel.Item key={index}>
+            <img className="d-block w-100" src={image} alt={`Slide ${index}`} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 }
 

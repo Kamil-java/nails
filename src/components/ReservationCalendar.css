@@ -1,5 +1,5 @@
 .reservation-calendar {
-  max-width: 400px;
+  /* max-width: 400px; */
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -9,4 +9,21 @@
 
 .btn {
   width: 100%;
+}
+
+.reserved {
+  background-color: green !important; /* Green color for reserved dates */
+  color: white; /* White text for contrast */
+  border-radius: 50%; /* Make it a circle */
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.btn-danger {
+  margin-left: 10px;
 }

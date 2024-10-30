@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer bg-light text-center text-lg-start mt-auto py-1">
+    <footer className="footer bg-light text-center text-lg-start mt-auto py-1 main-container">
       <div className="container p-2">
         <section className="mb-2">
           <h5 className="text-uppercase">Skontaktuj się z nami</h5>

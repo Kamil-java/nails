@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ServiceDetails.css";
+import PolaroidGallery from "./PolaroidGallery";
 
 function ServiceDetail() {
   const location = useLocation();
@@ -25,17 +25,7 @@ function ServiceDetail() {
 
         {/* Right column for carousel */}
         <div className="col-md-6">
-          <Carousel className="carousel-responsive">
-            {service.images.map((image, index) => (
-              <Carousel.Item key={index}>
-                <img
-                  className="d-block w-100"
-                  src={image}
-                  alt={`Slide ${index}`}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <PolaroidGallery />
         </div>
       </div>
     </div>

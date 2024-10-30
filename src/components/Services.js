@@ -90,6 +90,10 @@ function Services() {
       <span className="falling-leaf">🍂</span>
       <span className="falling-leaf">🍁</span>
       <span className="falling-leaf">🍃</span>
+      <span className="falling-leaf">🍂</span>
+      <span className="falling-leaf">🍁</span>
+      <span className="falling-leaf">🍃</span>
+      <span className="falling-leaf">🍂</span>
     </section>
   );
 }

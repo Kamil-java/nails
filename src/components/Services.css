@@ -46,6 +46,14 @@
   }
 }
 
+.container-leaves .falling-leaf {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  opacity: 0.6;
+  animation: fallAnimation 10s linear infinite;
+}
+
 .container-leaves .falling-leaf:nth-child(1) {
   left: 20%;
   animation-delay: 1s;
@@ -62,4 +70,29 @@
   left: 80%;
   animation-delay: 5s;
   animation-duration: 18s;
+}
+
+/* Adding more leaves */
+.container-leaves .falling-leaf:nth-child(4) {
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 14s;
+}
+
+.container-leaves .falling-leaf:nth-child(5) {
+  left: 30%;
+  animation-delay: 4s;
+  animation-duration: 16s;
+}
+
+.container-leaves .falling-leaf:nth-child(6) {
+  left: 70%;
+  animation-delay: 6s;
+  animation-duration: 13s;
+}
+
+.container-leaves .falling-leaf:nth-child(7) {
+  left: 90%;
+  animation-delay: 8s;
+  animation-duration: 17s;
 }

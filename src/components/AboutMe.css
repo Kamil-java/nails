@@ -1,0 +1,42 @@
+.about-me {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start; /* Align items vertically */
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Circular photo */
+  object-fit: cover;
+  border: 2px solid #ccc; /* Optional border */
+  margin-right: 20px; /* Space between photo and text */
+}
+
+.about-content {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.certificate {
+  display: flex;
+  justify-content: flex-end; /* Align certificate image to the right */
+  margin-top: 20px; /* Space between text and certificate */
+}
+
+.certificate-image {
+  max-width: 500px; /* Adjust to your desired maximum width */
+  width: 100%; /* Allow the image to be responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+}

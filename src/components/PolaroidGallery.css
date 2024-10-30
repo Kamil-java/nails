@@ -21,7 +21,7 @@
 }
 
 .polaroid-image {
-  width: 100%;
+  width: 100%; /* Increased size */
   height: auto;
   display: block;
   border-radius: 5px;
@@ -32,4 +32,9 @@
   margin-top: 10px;
   font-weight: bold;
   color: #333;
+}
+
+.polaroid:hover {
+  transform: scale(1.1) rotate(3deg); /* Slightly scale and rotate on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }

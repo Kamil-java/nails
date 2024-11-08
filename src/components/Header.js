@@ -17,11 +17,6 @@ function Header() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/polaroidgallery">
-            Pollaroid Gallery
-          </Link>
-        </li>
-        <li className="nav-item">
           <Link className="nav-link" to="/price">
             Price
           </Link>
@@ -38,7 +33,7 @@ function Header() {
         </li>
       </ul>
       <header className="bg-light-pink text-white text-center p-3">
-        <h1 style={{ color: "black" }}>Tytuł</h1>
+        <h1 style={{ color: "black" }}>Paznokciowa Bohemia</h1>
         <p style={{ color: "black" }}>
           Profesjonalne usługi manicure i pedicure. Martyna Birlet
         </p>

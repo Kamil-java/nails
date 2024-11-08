@@ -5,7 +5,6 @@ import ServiceDetail from "./components/ServiceDetails";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import PolaroidGallery from "./components/PolaroidGallery";
 import ReservationCalendar from "./components/ReservationCalendar";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/polaroidgallery" element={<PolaroidGallery />} />
           <Route path="/calendar" element={<ReservationCalendar />} />
           <Route path="/price" element={<CostEstimate />} />
           <Route path="/about_me" element={<AboutMe />} />

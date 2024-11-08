@@ -7,6 +7,8 @@
 
 .polaroid {
   background: white;
+  width: 13rem;
+  height: 13rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 10px;
   padding: 10px;
@@ -22,7 +24,7 @@
 
 .polaroid-image {
   width: 100%; /* Increased size */
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 5px;
 }

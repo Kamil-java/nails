@@ -25,7 +25,7 @@ function ServiceDetail() {
 
         {/* Right column for carousel */}
         <div className="col-md-6">
-          <PolaroidGallery />
+          <PolaroidGallery props={service.images} />
         </div>
       </div>
     </div>

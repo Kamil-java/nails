@@ -4,11 +4,18 @@ import "./Gallery.css"; // Create/update this CSS file
 
 function Gallery() {
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4O3BsnCHclQ8tXljMDSfWeu1bO3kkvBfSw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwZsaLzXWH3ODMeIwNCM2yMmEA996QOsOyQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9z5M9F8fIYi7c2lOTSEEfrWpZbMWTE7HxeQ&s",
-    "https://via.placeholder.com/1920x1080?text=Stylizacja+4",
-    "https://via.placeholder.com/1920x1080?text=Stylizacja+5",
+    `${process.env.PUBLIC_URL}/assets/1.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/2.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/3.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/4.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/5.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/6.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/7.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/8.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/9.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/10.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/11.jpeg`,
+    `${process.env.PUBLIC_URL}/assets/12.jpeg`,
   ];
 
   return (

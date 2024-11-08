@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import Modal from "./Modal"; // import the Modal component
 import "./PolaroidGallery.css";
 
-const PolaroidGallery = () => {
+const PolaroidGallery = ({ props }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
-  const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9z5M9F8fIYi7c2lOTSEEfrWpZbMWTE7HxeQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Lf41U-dLujaqmfcQvOTBu4pI6j7EgQxfqQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9z5M9F8fIYi7c2lOTSEEfrWpZbMWTE7HxeQ&s",
-  ];
+  const images = props;
 
   const handleShow = (image) => {
     setSelectedImage(image);

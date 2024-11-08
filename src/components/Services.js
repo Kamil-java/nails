@@ -6,46 +6,48 @@ function Services() {
   const services = [
     {
       id: 1,
-      name: "Manicure Hybrydowy",
+      name: "Manicure",
       price: 120.0,
       description: "Trwała stylizacja paznokci, odporna na zarysowania.",
       images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Lf41U-dLujaqmfcQvOTBu4pI6j7EgQxfqQ&s",
+        `${process.env.PUBLIC_URL}/assets/1.jpeg`,
+        `${process.env.PUBLIC_URL}/assets/2.jpeg`,
+        `${process.env.PUBLIC_URL}/assets/3.jpeg`,
       ],
     },
     {
       id: 2,
-      name: "Pedicure",
+      name: "Manicure z malowaniem klasycznym lakierem",
       description: "Kompleksowa pielęgnacja stóp i paznokci.",
       images: [],
     },
     {
       id: 3,
-      name: "Stylizacja Paznokci",
+      name: "Manicure hybrydowy",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 4,
-      name: "Stylizacja Paznokci",
+      name: "Manicure żelowy",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 5,
-      name: "Stylizacja Paznokci",
+      name: "Przedłużanie żelowe",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 6,
-      name: "Stylizacja Paznokci",
+      name: "Przedłużanie akrylożelem",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 7,
-      name: "Stylizacja Paznokci",
+      name: "Ściągnięcie stylizacji",
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
@@ -57,7 +59,7 @@ function Services() {
     const hour = new Date().getHours();
     const container = document.querySelector(".container-leaves");
 
-    if (hour >= 6 && hour < 18) {
+    if (hour >= 6 && hour < 19) {
       // Daytime: Use a gradient based on the sun's position
       const gradientStart = `rgba(255, 229, 180, ${1 - (hour - 6) / 12})`; // Change opacity based on hour
       const gradientEnd = `rgba(255, 255, 255, 1)`;

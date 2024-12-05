@@ -6,48 +6,55 @@ function Services() {
   const services = [
     {
       id: 1,
-      name: "Manicure",
-      price: 120.0,
-      description: "Trwała stylizacja paznokci, odporna na zarysowania.",
+      name: "Manicure żelowy",
+      price: 100.0,
+      description: "Do dodania",
       images: [
-        `${process.env.PUBLIC_URL}/assets/1.jpeg`,
-        `${process.env.PUBLIC_URL}/assets/2.jpeg`,
-        `${process.env.PUBLIC_URL}/assets/3.jpeg`,
+        `${process.env.PUBLIC_URL}/assets/Żel_1.jpg`,
+        `${process.env.PUBLIC_URL}/assets/Żel_2.jpg`,
+        `${process.env.PUBLIC_URL}/assets/Żel_3.jpg`,
       ],
-    },
-    {
-      id: 2,
-      name: "Manicure z malowaniem klasycznym lakierem",
-      description: "Kompleksowa pielęgnacja stóp i paznokci.",
-      images: [],
     },
     {
       id: 3,
       name: "Manicure hybrydowy",
+      price: 95.0,
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
-      images: [],
+      images: [
+        `${process.env.PUBLIC_URL}/assets/Hybryda_1.jpg`,
+        `${process.env.PUBLIC_URL}/assets/Hybryda_2.jpg`,
+        `${process.env.PUBLIC_URL}/assets/Hybryda_3.jpg`,
+      ],
     },
     {
       id: 4,
-      name: "Manicure żelowy",
+      name: "Manicure Akrylożelowy",
+      price: 130.0,
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
-      images: [],
+      images: [
+        `${process.env.PUBLIC_URL}/assets/AkryloŻel_1.jpg`,
+        `${process.env.PUBLIC_URL}/assets/AkryloŻel_2.jpg`,
+        `${process.env.PUBLIC_URL}/assets/AkryloŻel_5.jpg`,
+      ],
     },
     {
       id: 5,
-      name: "Przedłużanie żelowe",
+      name: "Manicure Malowany Lakierem Klasycznym",
+      price: 70.0,
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 6,
-      name: "Przedłużanie akrylożelem",
+      name: "Manicure",
+      price: 60.0,
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
     {
       id: 7,
-      name: "Ściągnięcie stylizacji",
+      name: "Manicure męski",
+      price: 60.0,
       description: "Oryginalne wzory i artystyczne projekty paznokci.",
       images: [],
     },
@@ -58,17 +65,9 @@ function Services() {
   useEffect(() => {
     const hour = new Date().getHours();
     const container = document.querySelector(".container-leaves");
-
-    if (hour >= 6 && hour < 19) {
-      // Daytime: Use a gradient based on the sun's position
-      const gradientStart = `rgba(255, 229, 180, ${1 - (hour - 6) / 12})`; // Change opacity based on hour
-      const gradientEnd = `rgba(255, 255, 255, 1)`;
-      container.style.background = `linear-gradient(to bottom, ${gradientStart}, ${gradientEnd})`;
-    } else {
-      // Nighttime: Dark background with stars
-      container.style.backgroundColor = "#2C3E50"; // Dark color for night
-      container.classList.add("stars"); // Add a class for stars effect
-    }
+    const gradientStart = `rgba(255, 229, 180, ${1 - (hour - 6) / 12})`; // Change opacity based on hour
+    const gradientEnd = `rgba(255, 255, 255, 1)`;
+    container.style.background = `linear-gradient(to bottom, ${gradientStart}, ${gradientEnd})`;
   }, []);
 
   return (

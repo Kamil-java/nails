@@ -3,17 +3,12 @@ import "./CostEstimate.css";
 
 const CostEstimate = () => {
   const services = [
-    { id: 1, name: "Manicure", price: "40 PLN" },
-    {
-      id: 2,
-      name: "Manicure z malowaniem klasycznym lakierem",
-      price: "70 PLN",
-    },
-    { id: 3, name: "Manicure hybrydowy", price: "100 PLN" },
-    { id: 4, name: "Manicure żelowy", price: "115 PLN" },
-    { id: 5, name: "Przedłużanie żelowe", price: "140 PLN" },
-    { id: 6, name: "Przedłużanie akrylożelowe", price: "150 PLN" },
-    { id: 7, name: "French", price: "10 PLN" },
+    { id: 1, name: "Manicure Damski", price: "60 PLN" },
+    { id: 2, name: "Manicure Męski", price: "60 PLN" },
+    { id: 2, name: "Manicure Akrylożelowy", price: "130 PLN" },
+    { id: 2, name: "Manicure Malowany Lakierem Klasycznym", price: "70 PLN" },
+    { id: 3, name: "Manicure Hybrydowy", price: "95 PLN" },
+    { id: 4, name: "Manicure Żelowy", price: "100 PLN" },
   ];
 
   return (

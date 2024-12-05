@@ -11,8 +11,8 @@ function Footer() {
             Jesteśmy dostępni w każdy poniedziałek - sobotę od 9:00 do 20:00.
             Skontaktuj się z nami, aby umówić się na wizytę!
           </p>
-          <p>Telefon: +48 999 999 999</p>
-          <p>Email: nails@gmial.com</p>
+          <p>Telefon: +48 791 461 521</p>
+          <p>Email: paznokciowe.cuda123@gmial.com</p>
         </section>
         <section className="mb-2">
           <h5 className="text-uppercase">Media społecznościowe</h5>

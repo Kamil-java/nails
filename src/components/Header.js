@@ -21,11 +21,11 @@ function Header() {
             Price
           </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" to="/calendar">
             Reservation Calendar
           </Link>
-        </li>
+        </li> */}
         <li className="nav-item">
           <Link className="nav-link" to="/about_me">
             About Me
@@ -33,9 +33,9 @@ function Header() {
         </li>
       </ul>
       <header className="bg-light-pink text-white text-center p-3">
-        <h1 style={{ color: "black" }}>Paznokciowa Bohemia</h1>
+        <h1 style={{ color: "black" }}>Paznokciowe Cuda</h1>
         <p style={{ color: "black" }}>
-          Profesjonalne usługi manicure i pedicure. Martyna Birlet
+          Profesjonalne usługi manicure. Martyna Birlet
         </p>
       </header>
     </div>

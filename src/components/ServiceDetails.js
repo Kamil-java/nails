@@ -18,7 +18,7 @@ function ServiceDetail() {
             <strong>Cena:</strong> {service.price} zł
           </p>
           <p>
-            <strong>Czas realizacji:</strong> 1h-2h
+            <strong>Czas realizacji:</strong> 2h
           </p>
           <p>{service.description}</p>
         </div>
